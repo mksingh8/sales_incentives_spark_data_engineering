@@ -1,10 +1,13 @@
+from dotenv import load_dotenv
+import os
 
+load_dotenv()  # take environment variables from .env.
 
-key = "manishsp_project"
-iv = "manish_sp_encypt"
-salt = "manishsp_AesEncryption"
+key = os.getenv("key")
+iv = os.getenv("iv")
+salt = os.getenv("salt")
 
-# iv = "manish_sp_encyptyo"
+# iv = os.getenv("iv")
 # # Ensure IV is exactly 16 bytes long
 # if len(iv) > 16:
 #     iv = iv[:16]
