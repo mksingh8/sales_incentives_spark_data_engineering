@@ -1,27 +1,41 @@
-import os
 
-key = "youtube_project"
-iv = "youtube_encyptyo"
-salt = "youtube_AesEncryption"
 
-#AWS Access And Secret key
-aws_access_key = "your_encrypted_access_key"
-aws_secret_key = "your_encrypted_secret_key"
-bucket_name = "youtube-project-testing"
+key = "manishsp_project"
+iv = "manish_sp_encypt"
+salt = "manishsp_AesEncryption"
+
+# iv = "manish_sp_encyptyo"
+# # Ensure IV is exactly 16 bytes long
+# if len(iv) > 16:
+#     iv = iv[:16]
+#     print(iv)
+# elif len(iv) < 16:
+#     iv = iv.ljust(16, '\0')  # Pad with null bytes if necessary
+#     print(f"less_iv: {iv}")
+
+# Now, when you encode it, it should be 16 bytes long
+iv_bytes = iv.encode('utf-8')
+
+# AWS Access And Secret key
+# aws_access_key = "urHvnd0/MTwHgpNCkE7QXc3MA/4kP3njYqpM1Bq+E0M="
+# aws_secret_key = "DbCCHBJll+Pi5R5+bmgfAm1bvxDkv3Y+giCxIAAmyTenNmltd/zQgjpGG/LMUR/h"
+aws_access_key = "5CAGGzQitq6CncKx7/1YdX2gLFltjGyyVGyAbpI8Lhg="
+aws_secret_key = "yA9NqqA6SRAzvkN1KVNNBtQi0CkZQzzaSZuPmWd4BWcF5m2SwRXR1o7DbNp7IevU"
+bucket_name = "manish-de-spark-project-1"
 s3_customer_datamart_directory = "customer_data_mart"
 s3_sales_datamart_directory = "sales_data_mart"
 s3_source_directory = "sales_data/"
 s3_error_directory = "sales_data_error/"
 s3_processed_directory = "sales_data_processed/"
+s3_sales_partition_directory = "sales_partitioned_data_mart/"
 
-
-#Database credential
+# Database credential
 # MySQL database connection properties
-database_name = "youtube_project"
+database_name = "manish_spark_de"
 url = f"jdbc:mysql://localhost:3306/{database_name}"
 properties = {
     "user": "root",
-    "password": "password",
+    "password": "hdoop",
     "driver": "com.mysql.cj.jdbc.Driver"
 }
 
@@ -32,17 +46,26 @@ product_table = "product"
 sales_team_table = "sales_team"
 store_table = "store"
 
-#Data Mart details
+# Data Mart details
 customer_data_mart_table = "customers_data_mart"
 sales_team_data_mart_table = "sales_team_data_mart"
 
 # Required columns
-mandatory_columns = ["customer_id","store_id","product_name","sales_date","sales_person_id","price","quantity","total_cost"]
-
+mandatory_columns = ["customer_id", "store_id", "product_name", "sales_date", "sales_person_id", "price", "quantity",
+                     "total_cost"]
 
 # File Download location
-local_directory = "C:\\Users\\nikita\\Documents\\data_engineering\\spark_data\\file_from_s3\\"
-customer_data_mart_local_file = "C:\\Users\\nikita\\Documents\\data_engineering\\spark_data\\customer_data_mart\\"
-sales_team_data_mart_local_file = "C:\\Users\\nikita\\Documents\\data_engineering\\spark_data\\sales_team_data_mart\\"
-sales_team_data_mart_partitioned_local_file = "C:\\Users\\nikita\\Documents\\data_engineering\\spark_data\\sales_partition_data\\"
-error_folder_path_local = "C:\\Users\\nikita\\Documents\\data_engineering\\spark_data\\error_files\\"
+local_directory = "/home/hdoop/projects/project-1/spark_data/file_from_s3/"
+customer_data_mart_local_file = "/home/hdoop/projects/project-1/spark_data/customer_data_mart/"
+sales_team_data_mart_local_file = "/home/hdoop/projects/project-1/spark_data/sales_team_data_mart/"
+sales_team_data_mart_partitioned_local_file = "/home/hdoop/projects/project-1/spark_data/sales_partition_data/"
+error_folder_path_local = "/home/hdoop/projects/project-1/spark_data/error_files/"
+
+# Mysql connections details
+host = "localhost"
+user = "root"
+password = "Mg/OFfuodzkkNUhKmWU7Qg=="
+database = "manish_spark_de"
+
+# MySQl table details
+product_staging_table = "product_staging_table"

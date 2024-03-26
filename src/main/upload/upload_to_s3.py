@@ -3,11 +3,12 @@ import traceback
 import datetime
 import os
 
+
 class UploadToS3:
-    def __init__(self,s3_client):
+    def __init__(self, s3_client):
         self.s3_client = s3_client
 
-    def upload_to_s3(self,s3_directory,s3_bucket,local_file_path):
+    def upload_to_s3(self, s3_directory, s3_bucket, local_file_path):
         current_epoch = int(datetime.datetime.now().timestamp()) * 1000
         s3_prefix = f"{s3_directory}/{current_epoch}/"
         try:

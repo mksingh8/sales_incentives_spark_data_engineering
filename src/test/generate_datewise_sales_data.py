@@ -23,7 +23,7 @@ sales_persons = {
 }
 
 
-file_location = "C:\\Users\\nikita\\Documents\\data_engineering\\spark_data"
+file_location = "/home/hdoop/projects/project-1/spark_data"
 
 if not os.path.exists(file_location):
     os.makedirs(file_location)

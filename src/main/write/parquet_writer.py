@@ -1,11 +1,13 @@
 import traceback
 from src.main.utility.logging_config import *
+
+
 class ParquetWriter:
-    def __init__(self,mode,data_format):
+    def __init__(self, mode, data_format):
         self.mode = mode
         self.data_format = data_format
 
-    def dataframe_writer(self,df, file_path):
+    def dataframe_writer(self, df, file_path):
         try:
             df.write.format(self.data_format) \
                 .option("header", "true") \

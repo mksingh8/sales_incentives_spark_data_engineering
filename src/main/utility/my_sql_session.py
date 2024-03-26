@@ -1,11 +1,15 @@
 import mysql.connector
 
+from resources.dev import config
+from src.main.utility.encrypt_decrypt import decrypt
+
+
 def get_mysql_connection():
     connection = mysql.connector.connect(
-        host="localhost",
-        user="root",
-        password="password",
-        database="manish"
+        host= config.host,
+        user=config.user,
+        password=decrypt(config.password),
+        database=config.database
     )
     return connection
 
