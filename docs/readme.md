@@ -1,3 +1,6 @@
+Hi, The base code is taken Manish's repo. The main.py (heart of the application) as well as a lot of modifications are done in order to tighten the loose ends. I shall provide the details of the modification done.
+I have used Ubuntu. I sahll add the steps to setup the hadoop, pyspark, mysql in Ubunto later. But the below information will help you setup the environement in Windows.
+
 Welcome to the show. This endeavor aims to provide you with insights into the functioning of projects within a real-time environment.
 
 The code has been meticulously crafted with careful consideration for various aspects. It not only nurtures your coding skills but also imparts a comprehensive comprehension of project structures.
