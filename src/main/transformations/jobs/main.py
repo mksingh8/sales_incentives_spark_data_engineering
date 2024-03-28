@@ -330,6 +330,7 @@ final_sales_team_data_mart_df = (s3_customer_store_sales_df_join
                                  .select("store_id", "sales_person_id",
                                          "sales_person_first_name", "sales_person_last_name", "store_manager_name",
                                          "manager_id", "is_manager", "sales_person_address", "sales_person_pincode",
+                                         "sales_date", "total_cost",
                                          expr("SUBSTRING(sales_date,1,7) as sales_month")))
 
 logger.info("********************** Final Data for Sales Team Data Mart ************************")
@@ -381,4 +382,4 @@ logger.info(f"Calculation of sales mart done and written into the table: {config
 
 ####################### Last Step #####################
 
-# Move the file into S3 processed folder and delte the local files
+# Move the file into S3 processed folder and delete the local files
