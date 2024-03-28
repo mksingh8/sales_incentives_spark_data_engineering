@@ -13,6 +13,7 @@ from src.main.read.aws_read import S3Reader
 from src.main.read.database_read import DatabaseReader
 from src.main.transformations.jobs.customer_mart_sql_tranform_write import customer_mart_calculation_table_write
 from src.main.transformations.jobs.dimension_tables_join import dimensions_table_join
+from src.main.transformations.jobs.sales_mart_sql_transform_write import sales_mart_calculation_table_write
 from src.main.upload.upload_to_s3 import UploadToS3
 from src.main.utility.encrypt_decrypt import decrypt
 from src.main.utility.logging_config import logger
@@ -80,7 +81,8 @@ except Exception as e:
     logger.error("Exited with error code: %s", e)
     raise e
 
-# ['s3://manish-de-spark-project-1/sales_data/sales_data.csv', 's3://manish-de-spark-project-1/sales_data/sales_data_2023-12-13.csv']
+# ['s3://manish-de-spark-project-1/sales_data/sales_data.csv',
+# 's3://manish-de-spark-project-1/sales_data/sales_data_2023-12-13.csv']
 
 prefix = f"s3://{config.bucket_name}/"
 file_paths = [url[len(prefix):] for url in s3_absolute_file_path]
@@ -342,11 +344,11 @@ message = s3_uploader.upload_to_s3(s3_directory, config.bucket_name, config.sale
 logger.info(f"{message}")
 
 # writing the data into partitions
-final_sales_team_data_mart_df.write.format("parquet")\
-    .option("header", "true")\
-    .mode("overwrite")\
-    .partitionBy("sales_month", "store_id")\
-    .option("path", config.sales_team_data_mart_partitioned_local_file)\
+final_sales_team_data_mart_df.write.format("parquet") \
+    .option("header", "true") \
+    .mode("overwrite") \
+    .partitionBy("sales_month", "store_id") \
+    .option("path", config.sales_team_data_mart_partitioned_local_file) \
     .save()
 
 # Move data into s3 partition folder
@@ -373,5 +375,10 @@ logger.info("******************* Calculation of customer mart done and written i
 # Rest sales person will get nothing
 # Write the data into MySQL table
 
+logger.info("Calculating sales monthly billed amount")
+sales_mart_calculation_table_write(final_sales_team_data_mart_df)
+logger.info(f"Calculation of sales mart done and written into the table: {config.sales_team_data_mart_table}")
 
+####################### Last Step #####################
 
+# Move the file into S3 processed folder and delte the local files
