@@ -1,18 +1,11 @@
-Hi, The base code is taken Manish's repo. The main.py (heart of the application) as well as a lot of modifications are done in order to tighten the loose ends. I shall provide the details of the modification done.
-I have used Ubuntu. I sahll add the steps to setup the hadoop, pyspark, mysql in Ubunto later. But the below information will help you setup the environement in Windows.
+The main.py (heart of the application) as well as a lot of modifications are done in order to tighten the loose ends within the project.
+I have used Ubuntu and pyCharm for this app. 
 
-Welcome to the show. This endeavor aims to provide you with insights into the functioning of projects within a real-time environment.
+The base code is taken from Manish's repo.
+This endeavor aims to provide you with insights into the functioning of projects within a real-time environment.
 
 The code has been meticulously crafted with careful consideration for various aspects. It not only nurtures your coding skills but also imparts a comprehensive comprehension of project structures.
 
-Let's Start with requirement to complete the projects:-
-1. You should have laptop with minimum 4 GB of RAM, i3 and above (Better to have 8GB with i5).
-2. Local setup of spark. This is tricky so keep all things intact to work it properly.Download python 3.10.11 instead of python3.6 or python3.9 Use this link for clean setup :- https://youtu.be/4p7gX4DBLyc
-3. PyCharm installed in the system. How to install:- https://youtu.be/pPYjX-9JAQY
-4. MySQL workbench should also be installed to the system. How to install:- https://youtu.be/JEbTIXd61kc
-5. GitHub account is good to have but not necessary.
-5. You should have AWS account. How to create:- https://youtu.be/k7522oZQi9Y
-6. Understanding of spark,sql and python is required.
 
 ```plaintext
 Project structure:-
@@ -72,17 +65,8 @@ How to run the program in Pycharm:-
 1. Open the pycharm editor.
 2. Upload or pull the project from GitHub.
 3. Open terminal from bottom pane.
-4. Goto virtual environment and activate it. Let's say you have venv as virtual environament.i) cd venv ii) cd Scripts iii) activate (if activate doesn't work then use ./activate)
+4. Goto virtual environment and activate it. Let's say you have venv as virtual environment.i) cd venv ii) cd Scripts iii) activate (if activate doesn't work then use ./activate)
 5. Create main.py as explained in my videos on YouTube channel.
 6. You will have to create a user on AWS also and assign s3 full access and provide secret key and access key to the config file.
-6. Run main.py from green play button on top right hand side.
-7. If everything works as expected enjoy, else re-try.
-
-Project Architecture:-
-![Architecture](C:\Users\nikita\Pictures\Screenshots\architecture.png)
-
-Database ER Diagram:-
-![Architecture](C:\Users\nikita\Documents\data_engineering\pythonProject\youtube_project\docs\database_schema.drawio.png)
-
-If you get stuck, don't forget to my watch my youtube channel project playlist for better understanding of the flow.
-My youtube channel link:- https://www.youtube.com/channel/UCacvJAgrPTjSEdnZObMzpqQ
+7. Run main.py from green play button on top right hand side.
+8. If everything works as expected enjoy, else re-try.
