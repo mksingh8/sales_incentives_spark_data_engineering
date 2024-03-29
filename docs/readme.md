@@ -61,6 +61,12 @@ my_project/
 │   │    └── generate_csv_data.py
 ```
 
+Project Architecture:
+![Project Architecture](/de_project1/docs/architecture.png)
+
+MYSQL Database Schema:
+![MYSQL Database Schema](docs/database_schema.drawio.png)
+
 How to run the program in Pycharm:-
 1. Open the pycharm editor.
 2. Upload or pull the project from GitHub.
