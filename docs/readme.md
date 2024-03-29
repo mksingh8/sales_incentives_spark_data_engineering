@@ -5,7 +5,15 @@ The base code is taken from Manish's repo.
 This endeavor aims to provide you with insights into the functioning of projects within a real-time environment.
 
 The code has been meticulously crafted with careful consideration for various aspects. It not only nurtures your coding skills but also imparts a comprehensive comprehension of project structures.
-
+How to run the program in Pycharm:-
+1. Open the pycharm editor.
+2. Upload or pull the project from GitHub.
+3. Open terminal from bottom pane.
+4. Goto virtual environment and activate it. Let's say you have venv as virtual environment.i) cd venv ii) cd Scripts iii) activate (if activate doesn't work then use ./activate)
+5. Create .env file and add key, iv and salt. Ensure iv is exactly 16 byte long. Open pyCHarm terminal and run pip install -r resources/dev/requirements.txt command to load the required packages.
+6. You will have to create a user on AWS also and assign s3 full access and provide secret key and access key to the config file.
+7. Run main.py from green play button on top right hand side or in terminal run spark-submit master local[*] main.py
+8. If everything works as expected enjoy, else re-try and watch https://youtu.be/FWiwI5DheO0?si=kYDKzlEhACkXOvmo
 
 ```plaintext
 Project structure:-
@@ -84,12 +92,3 @@ Project Architecture:
 MYSQL Database Schema:
 ![MYSQL Database Schema](database_schema.drawio.png)
 
-How to run the program in Pycharm:-
-1. Open the pycharm editor.
-2. Upload or pull the project from GitHub.
-3. Open terminal from bottom pane.
-4. Goto virtual environment and activate it. Let's say you have venv as virtual environment.i) cd venv ii) cd Scripts iii) activate (if activate doesn't work then use ./activate)
-5. Create main.py as explained in my videos on YouTube channel.
-6. You will have to create a user on AWS also and assign s3 full access and provide secret key and access key to the config file.
-7. Run main.py from green play button on top right hand side.
-8. If everything works as expected enjoy, else re-try.
