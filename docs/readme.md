@@ -62,10 +62,10 @@ my_project/
 ```
 
 Project Architecture:
-![Project Architecture](/de_project1/docs/architecture.png)
+![Project Architecture](architecture.png)
 
 MYSQL Database Schema:
-![MYSQL Database Schema](docs/database_schema.drawio.png)
+![MYSQL Database Schema](database_schema.drawio.png)
 
 How to run the program in Pycharm:-
 1. Open the pycharm editor.
