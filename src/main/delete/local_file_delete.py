@@ -10,12 +10,12 @@ def delete_local_file(delete_file_path):
         for item in files_to_delete:
             if os.path.isfile(item):
                 os.remove(item)
-                print(f"Deleted file: {item}")
+                logger.info(f"Deleted file: {item}")
             elif os.path.isdir(item):
                 shutil.rmtree(item)
-                print(f"Deleted folder: {item}")
+                logger.info(f"Deleted folder: {item}")
     except Exception as e:
         logger.error(f"Error Deleting local files  : {str(e)}")
         traceback_message = traceback.format_exc()
-        print(traceback_message)
+        logger.error(traceback_message)
         raise e

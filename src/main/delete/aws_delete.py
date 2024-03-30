@@ -1,5 +1,6 @@
 import boto3
 
+
 class S3Deleter:
     def __init__(self, aws_access_key, aws_secret_key):
         self.s3_client = boto3.client(

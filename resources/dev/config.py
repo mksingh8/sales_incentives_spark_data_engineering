@@ -17,7 +17,7 @@ salt = os.getenv("salt")
 #     print(f"less_iv: {iv}")
 
 # Now, when you encode it, it should be 16 bytes long
-iv_bytes = iv.encode('utf-8')
+# iv_bytes = iv.encode('utf-8')
 
 # AWS Access And Secret key
 aws_access_key = "5CAGGzQitq6CncKx7/1YdX2gLFltjGyyVGyAbpI8Lhg="

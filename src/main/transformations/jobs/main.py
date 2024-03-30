@@ -5,7 +5,6 @@ import sys
 
 from pyspark.sql.functions import lit, concat_ws, expr
 from pyspark.sql.types import StructType, StructField, IntegerType, StringType, DateType, FloatType
-
 from resources.dev import config
 from src.main.delete.local_file_delete import delete_local_file
 from src.main.download.aws_file_download import S3FileDownloader
@@ -18,10 +17,13 @@ from src.main.transformations.jobs.sales_mart_sql_transform_write import sales_m
 from src.main.upload.upload_to_s3 import UploadToS3
 from src.main.utility.encrypt_decrypt import decrypt
 from src.main.utility.logging_config import logger
-from src.main.utility.my_sql_session import get_mysql_connection
+from src.main.utility.my_sql_session import DatabaseConnectionPool #, get_mysql_connection,
 from src.main.utility.s3_client_object import S3ClientProvider
 from src.main.utility.spark_session import spark_session
 from src.main.write.parquet_writer import ParquetWriter
+
+############## Initializing the MYSQL connection - Singleton Pattern #################
+conn = DatabaseConnectionPool()
 
 ############## GET S3 CLient ###################
 
@@ -42,7 +44,12 @@ logger.info("List of Buckets: %s", response['Buckets'])
 # Else throw an error and do not process the next file
 
 csv_files = [file for file in os.listdir(config.local_directory) if file.endswith(".csv")]
-connection = get_mysql_connection()
+# connection = get_mysql_connection()
+# cursor = connection.cursor()
+
+# Get a connection from the pool
+connection = conn.get_connection()
+# Use the connection
 cursor = connection.cursor()
 
 total_csv_files = []
@@ -58,6 +65,8 @@ if csv_files:
     logger.info(f"dynamically statement created: {statement}")
     cursor.execute(statement)
     data = cursor.fetchall()
+    # Close the connection
+    DatabaseConnectionPool.close_connection(connection)
     if data:
         logger.info(f"Your last run was failed, please check following files: {data}")
     else:
@@ -202,15 +211,18 @@ if correct_files:
 
     logger.info(f"Insert statement created for staging table ---- {insert_statements}")
     logger.info("*************************** Connecting to MySql server ***************************")
-    connection = get_mysql_connection()
+    # connection = get_mysql_connection()
+    connection = conn.get_connection()
     cursor = connection.cursor()
     logger.info("*************************** MySql connected Successfully ***************************")
 
     for statement in insert_statements:
         cursor.execute(statement)
         connection.commit()
-    cursor.close()
-    connection.close()
+    # cursor.close()
+    # connection.close()
+    # Close the connection and return it to the pool
+    DatabaseConnectionPool.close_connection(connection)
 else:
     logger.error("****************** There is no file to process *********************")
     raise Exception("******************* No data is available with correct files **********************")
@@ -416,14 +428,16 @@ if correct_files:
         update_statements.append(statements)
     logger.info(f"Update statement created for staging table: {update_statements}")
     logger.info("**************** Connecting to MySQL server *******************")
-    connection = get_mysql_connection()
+    # connection = get_mysql_connection()
+    connection = conn.get_connection()
     cursor = connection.cursor()
     logger.info("*********** MySQL connected successfully **************")
     for statement in update_statements:
         cursor.execute(statement)
         connection.commit()
-    cursor.close()
-    connection.close()
+    # cursor.close()
+    # connection.close()
+    DatabaseConnectionPool.close_connection(connection)
 else:
     logger.error("***************** Error in the process while deleting the files *******************")
     sys.exit()
