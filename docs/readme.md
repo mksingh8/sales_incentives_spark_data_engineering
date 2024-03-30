@@ -1,5 +1,5 @@
-The main.py (heart of the application) as well as a lot of modifications are done in order to tighten the loose ends within the project.
-I have used Ubuntu and pyCharm for this app. 
+The main.py (heart of the application) is created from the scratch, a lot of modifications are done in order to tighten the loose ends within the project.
+I have used Ubuntu os and pyCharm ide to write the code for this spark app. 
 
 The base code is taken from Manish's repo.
 This endeavor aims to provide you with insights into the functioning of projects within a real-time environment.
