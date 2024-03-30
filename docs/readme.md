@@ -80,7 +80,7 @@ My_Project
 Project Architecture:
 ![Project Architecture](architecture.png)
 
-MYSQL Database Schema:
+MYSQL Database Schema (ER Diagram):
 ![MYSQL Database Schema](database_schema.drawio.png)
 
 How to run the program in Pycharm:-

@@ -37,8 +37,8 @@ s3_sales_partition_directory = "sales_partitioned_data_mart/"
 database_name = "manish_spark_de"
 url = f"jdbc:mysql://localhost:3306/{database_name}"
 properties = {
-    "user": "root",
-    "password": "hdoop",
+    "user": os.getenv("mysqluser"),
+    "password": os.getenv("mysqlpassword"),
     "driver": "com.mysql.cj.jdbc.Driver"
 }
 
