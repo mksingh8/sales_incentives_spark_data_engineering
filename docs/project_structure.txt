@@ -1,15 +1,18 @@
-.
+my_project
 ├── docs
-│   ├── architecture
 │   ├── architecture.png
 │   ├── database_schema.drawio.png
 │   ├── project_structure.txt
 │   └── readme.md
 ├── .env
 ├── .gitignore
+├── __init__.py
+├── logs
+│   └── application.log
 ├── resources
 │   ├── dev
 │   │   ├── config.py
+│   │   ├── __init__.py
 │   │   └── requirements.txt
 │   ├── __init__.py
 │   ├── prod
@@ -36,9 +39,11 @@
     │   │   ├── aws_read.py
     │   │   └── database_read.py
     │   ├── transformations
+    │   │   ├── __init__.py
     │   │   └── jobs
     │   │       ├── customer_mart_sql_tranform_write.py
     │   │       ├── dimension_tables_join.py
+    │   │       ├── __init__.py
     │   │       ├── main.py
     │   │       └── sales_mart_sql_transform_write.py
     │   ├── upload
@@ -64,4 +69,4 @@
         ├── sales_data_upload_s3.py
         └── scratch_pad.py
 
-19 directories, 45 files
+20 directories, 49 files

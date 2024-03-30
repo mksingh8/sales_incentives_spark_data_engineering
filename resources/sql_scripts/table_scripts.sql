@@ -137,7 +137,7 @@ INSERT INTO s3_bucket_info (bucket_name, status, created_date, updated_date)
 VALUES ('manish-de-spark-project-1', 'active', NOW(), NOW());
 
 
---Data Mart customer
+--customer mart table
 CREATE TABLE customers_data_mart (
     customer_id INT ,
     full_name VARCHAR(100),

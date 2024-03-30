@@ -429,3 +429,4 @@ else:
     sys.exit()
 
 input("Press enter to terminate")
+spark.stop()

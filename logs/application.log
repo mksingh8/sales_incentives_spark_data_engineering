@@ -1,0 +1,218 @@
+2024-03-30 01:39:06,077 - INFO - List of Buckets: [{'Name': 'manish-de-spark-project-1', 'CreationDate': datetime.datetime(2024, 3, 15, 15, 34, 33, tzinfo=tzutc())}]
+2024-03-30 01:39:06,114 - INFO - Last run was successful!!!
+2024-03-30 01:39:07,079 - INFO - Total files available in folder 'sales_data/' of bucket 'manish-de-spark-project-1': {'ResponseMetadata': {'RequestId': 'YZX6TTRE2NAK09QC', 'HostId': 'Ae9SUpvCM91DvqJKl876GdBat3XR6OoSsiUQ4xNrPU4OPGrtRgZW49DO9pqoxyCqC1oTXD6JD9xpsA9eoucBdw==', 'HTTPStatusCode': 200, 'HTTPHeaders': {'x-amz-id-2': 'Ae9SUpvCM91DvqJKl876GdBat3XR6OoSsiUQ4xNrPU4OPGrtRgZW49DO9pqoxyCqC1oTXD6JD9xpsA9eoucBdw==', 'x-amz-request-id': 'YZX6TTRE2NAK09QC', 'date': 'Sat, 30 Mar 2024 05:39:08 GMT', 'x-amz-bucket-region': 'us-east-2', 'content-type': 'application/xml', 'transfer-encoding': 'chunked', 'server': 'AmazonS3'}, 'RetryAttempts': 1}, 'IsTruncated': False, 'Contents': [{'Key': 'sales_data/extra_column_sales_data_2023_11_01.csv', 'LastModified': datetime.datetime(2024, 3, 30, 5, 30, 46, tzinfo=tzutc()), 'ETag': '"0cc6d8a83a66cbfb151e98af0f80af9e"', 'Size': 44125, 'StorageClass': 'STANDARD'}, {'Key': 'sales_data/less_column_sales_data_2023-10-17.csv', 'LastModified': datetime.datetime(2024, 3, 30, 5, 30, 46, tzinfo=tzutc()), 'ETag': '"bda03cec01d8062894990369c9ebad34"', 'Size': 10029, 'StorageClass': 'STANDARD'}, {'Key': 'sales_data/sales_data.csv', 'LastModified': datetime.datetime(2024, 3, 30, 5, 30, 46, tzinfo=tzutc()), 'ETag': '"5cfb2bff8f0082fca1ae8b0fce80dcef"', 'Size': 19717, 'StorageClass': 'STANDARD'}, {'Key': 'sales_data/sales_data_2023-12-13.csv', 'LastModified': datetime.datetime(2024, 3, 30, 5, 30, 46, tzinfo=tzutc()), 'ETag': '"99cc94d38e155721ebc5e973b75b9172"', 'Size': 9988, 'StorageClass': 'STANDARD'}, {'Key': 'sales_data/sales_data_2023-12-15.csv', 'LastModified': datetime.datetime(2024, 3, 30, 5, 30, 46, tzinfo=tzutc()), 'ETag': '"99cc94d38e155721ebc5e973b75b9172"', 'Size': 9988, 'StorageClass': 'STANDARD'}, {'Key': 'sales_data/sales_data_2023-12-17.csv', 'LastModified': datetime.datetime(2024, 3, 30, 5, 30, 46, tzinfo=tzutc()), 'ETag': '"bda03cec01d8062894990369c9ebad34"', 'Size': 10029, 'StorageClass': 'STANDARD'}, {'Key': 'sales_data/sales_data_2024-01-03.csv', 'LastModified': datetime.datetime(2024, 3, 30, 5, 30, 45, tzinfo=tzutc()), 'ETag': '"5cfb2bff8f0082fca1ae8b0fce80dcef"', 'Size': 19717, 'StorageClass': 'STANDARD'}], 'Name': 'manish-de-spark-project-1', 'Prefix': 'sales_data/', 'MaxKeys': 1000, 'EncodingType': 'url', 'KeyCount': 7}
+2024-03-30 01:39:07,080 - INFO - Absolute path on s3 bucket for csv file ['s3://manish-de-spark-project-1/sales_data/extra_column_sales_data_2023_11_01.csv', 's3://manish-de-spark-project-1/sales_data/less_column_sales_data_2023-10-17.csv', 's3://manish-de-spark-project-1/sales_data/sales_data.csv', 's3://manish-de-spark-project-1/sales_data/sales_data_2023-12-13.csv', 's3://manish-de-spark-project-1/sales_data/sales_data_2023-12-15.csv', 's3://manish-de-spark-project-1/sales_data/sales_data_2023-12-17.csv', 's3://manish-de-spark-project-1/sales_data/sales_data_2024-01-03.csv'] 
+2024-03-30 01:39:07,080 - INFO - File path available on S3 under manish-de-spark-project-1 bucket and file path is ['sales_data/extra_column_sales_data_2023_11_01.csv', 'sales_data/less_column_sales_data_2023-10-17.csv', 'sales_data/sales_data.csv', 'sales_data/sales_data_2023-12-13.csv', 'sales_data/sales_data_2023-12-15.csv', 'sales_data/sales_data_2023-12-17.csv', 'sales_data/sales_data_2024-01-03.csv']
+2024-03-30 01:39:07,080 - INFO - Running download files for these files ['sales_data/extra_column_sales_data_2023_11_01.csv', 'sales_data/less_column_sales_data_2023-10-17.csv', 'sales_data/sales_data.csv', 'sales_data/sales_data_2023-12-13.csv', 'sales_data/sales_data_2023-12-15.csv', 'sales_data/sales_data_2023-12-17.csv', 'sales_data/sales_data_2024-01-03.csv']
+2024-03-30 01:39:07,080 - INFO - File name extra_column_sales_data_2023_11_01.csv 
+2024-03-30 01:39:07,258 - INFO - File name less_column_sales_data_2023-10-17.csv 
+2024-03-30 01:39:07,422 - INFO - File name sales_data.csv 
+2024-03-30 01:39:07,567 - INFO - File name sales_data_2023-12-13.csv 
+2024-03-30 01:39:07,702 - INFO - File name sales_data_2023-12-15.csv 
+2024-03-30 01:39:07,866 - INFO - File name sales_data_2023-12-17.csv 
+2024-03-30 01:39:07,997 - INFO - File name sales_data_2024-01-03.csv 
+2024-03-30 01:39:08,154 - INFO - list of files present in the local directory after download: ['sales_data_2024-01-03.csv', 'sales_data.csv', 'sales_data_2023-12-15.csv', 'less_column_sales_data_2023-10-17.csv', 'extra_column_sales_data_2023_11_01.csv', 'sales_data_2023-12-13.csv', 'sales_data_2023-12-17.csv']
+2024-03-30 01:39:08,155 - INFO - **********************Listing the files***********************
+2024-03-30 01:39:08,155 - INFO - listing the csv files that needs to be processed: ['/home/hdoop/projects/project-1/spark_data/file_from_s3/sales_data_2024-01-03.csv', '/home/hdoop/projects/project-1/spark_data/file_from_s3/sales_data.csv', '/home/hdoop/projects/project-1/spark_data/file_from_s3/sales_data_2023-12-15.csv', '/home/hdoop/projects/project-1/spark_data/file_from_s3/less_column_sales_data_2023-10-17.csv', '/home/hdoop/projects/project-1/spark_data/file_from_s3/extra_column_sales_data_2023_11_01.csv', '/home/hdoop/projects/project-1/spark_data/file_from_s3/sales_data_2023-12-13.csv', '/home/hdoop/projects/project-1/spark_data/file_from_s3/sales_data_2023-12-17.csv']
+2024-03-30 01:39:08,155 - INFO - ******************* Creating Spark Session *******************
+2024-03-30 01:39:12,380 - INFO - spark session <pyspark.sql.session.SparkSession object at 0x78c502fb2bc0>
+2024-03-30 01:39:12,380 - INFO - ******************* Spark Session Created *******************
+2024-03-30 01:39:12,380 - INFO - Checking schema of data loaded in s3
+2024-03-30 01:39:18,111 - INFO - Schema/Columns in /home/hdoop/projects/project-1/spark_data/file_from_s3/sales_data_2024-01-03.csv are ['customer_id', 'store_id', 'product_name', 'sales_date', 'sales_person_id', 'price', 'quantity', 'total_cost']
+2024-03-30 01:39:18,111 - INFO - Mandatory columns in schema is: ['customer_id', 'store_id', 'product_name', 'sales_date', 'sales_person_id', 'price', 'quantity', 'total_cost']
+2024-03-30 01:39:18,111 - INFO - Missing column(s) is/are: set()
+2024-03-30 01:39:18,111 - INFO - No missing column for the /home/hdoop/projects/project-1/spark_data/file_from_s3/sales_data_2024-01-03.csv
+2024-03-30 01:39:18,436 - INFO - Schema/Columns in /home/hdoop/projects/project-1/spark_data/file_from_s3/sales_data.csv are ['customer_id', 'store_id', 'product_name', 'sales_date', 'sales_person_id', 'price', 'quantity', 'total_cost']
+2024-03-30 01:39:18,437 - INFO - Mandatory columns in schema is: ['customer_id', 'store_id', 'product_name', 'sales_date', 'sales_person_id', 'price', 'quantity', 'total_cost']
+2024-03-30 01:39:18,437 - INFO - Missing column(s) is/are: set()
+2024-03-30 01:39:18,437 - INFO - No missing column for the /home/hdoop/projects/project-1/spark_data/file_from_s3/sales_data.csv
+2024-03-30 01:39:18,684 - INFO - Schema/Columns in /home/hdoop/projects/project-1/spark_data/file_from_s3/sales_data_2023-12-15.csv are ['customer_id', 'product_name', 'sales_date', 'sales_person_id', 'price', 'quantity', 'total_cost', 'payment_mode']
+2024-03-30 01:39:18,684 - INFO - Mandatory columns in schema is: ['customer_id', 'store_id', 'product_name', 'sales_date', 'sales_person_id', 'price', 'quantity', 'total_cost']
+2024-03-30 01:39:18,684 - INFO - Missing column(s) is/are: {'store_id'}
+2024-03-30 01:39:18,980 - INFO - Schema/Columns in /home/hdoop/projects/project-1/spark_data/file_from_s3/less_column_sales_data_2023-10-17.csv are ['customer_id', 'product_name', 'sales_date', 'sales_person_id', 'price', 'quantity', 'total_cost', 'payment_mode']
+2024-03-30 01:39:18,980 - INFO - Mandatory columns in schema is: ['customer_id', 'store_id', 'product_name', 'sales_date', 'sales_person_id', 'price', 'quantity', 'total_cost']
+2024-03-30 01:39:18,980 - INFO - Missing column(s) is/are: {'store_id'}
+2024-03-30 01:39:19,257 - INFO - Schema/Columns in /home/hdoop/projects/project-1/spark_data/file_from_s3/extra_column_sales_data_2023_11_01.csv are ['customer_id', 'store_id', 'product_name', 'sales_date', 'sales_person_id', 'price', 'quantity', 'total_cost', 'payment_mode']
+2024-03-30 01:39:19,258 - INFO - Mandatory columns in schema is: ['customer_id', 'store_id', 'product_name', 'sales_date', 'sales_person_id', 'price', 'quantity', 'total_cost']
+2024-03-30 01:39:19,258 - INFO - Missing column(s) is/are: set()
+2024-03-30 01:39:19,258 - INFO - No missing column for the /home/hdoop/projects/project-1/spark_data/file_from_s3/extra_column_sales_data_2023_11_01.csv
+2024-03-30 01:39:19,459 - INFO - Schema/Columns in /home/hdoop/projects/project-1/spark_data/file_from_s3/sales_data_2023-12-13.csv are ['customer_id', 'product_name', 'sales_date', 'sales_person_id', 'price', 'quantity', 'total_cost', 'payment_mode']
+2024-03-30 01:39:19,459 - INFO - Mandatory columns in schema is: ['customer_id', 'store_id', 'product_name', 'sales_date', 'sales_person_id', 'price', 'quantity', 'total_cost']
+2024-03-30 01:39:19,459 - INFO - Missing column(s) is/are: {'store_id'}
+2024-03-30 01:39:19,653 - INFO - Schema/Columns in /home/hdoop/projects/project-1/spark_data/file_from_s3/sales_data_2023-12-17.csv are ['customer_id', 'product_name', 'sales_date', 'sales_person_id', 'price', 'quantity', 'total_cost', 'payment_mode']
+2024-03-30 01:39:19,653 - INFO - Mandatory columns in schema is: ['customer_id', 'store_id', 'product_name', 'sales_date', 'sales_person_id', 'price', 'quantity', 'total_cost']
+2024-03-30 01:39:19,654 - INFO - Missing column(s) is/are: {'store_id'}
+2024-03-30 01:39:19,654 - INFO - ******************** List of correct files******************** ['/home/hdoop/projects/project-1/spark_data/file_from_s3/sales_data_2024-01-03.csv', '/home/hdoop/projects/project-1/spark_data/file_from_s3/sales_data.csv', '/home/hdoop/projects/project-1/spark_data/file_from_s3/extra_column_sales_data_2023_11_01.csv']
+2024-03-30 01:39:19,654 - INFO - ******************** List of error files******************** ['/home/hdoop/projects/project-1/spark_data/file_from_s3/sales_data_2023-12-15.csv', '/home/hdoop/projects/project-1/spark_data/file_from_s3/less_column_sales_data_2023-10-17.csv', '/home/hdoop/projects/project-1/spark_data/file_from_s3/sales_data_2023-12-13.csv', '/home/hdoop/projects/project-1/spark_data/file_from_s3/sales_data_2023-12-17.csv']
+2024-03-30 01:39:19,654 - INFO - ******************** Moving the error files to error directory if any********************
+2024-03-30 01:39:19,654 - INFO - Moved sales_data_2023-12-15.csv file from /home/hdoop/projects/project-1/spark_data/file_from_s3/sales_data_2023-12-15.csv path to /home/hdoop/projects/project-1/spark_data/error_files/sales_data_2023-12-15.csv.
+2024-03-30 01:39:19,890 - INFO - Moved file: sales_data/sales_data_2023-12-15.csv to sales_data_error/sales_data_2023-12-15.csv
+2024-03-30 01:39:19,890 - INFO - Data Moved successfully from sales_data/ to sales_data_error/
+2024-03-30 01:39:19,891 - INFO - Moved less_column_sales_data_2023-10-17.csv file from /home/hdoop/projects/project-1/spark_data/file_from_s3/less_column_sales_data_2023-10-17.csv path to /home/hdoop/projects/project-1/spark_data/error_files/less_column_sales_data_2023-10-17.csv.
+2024-03-30 01:39:20,103 - INFO - Moved file: sales_data/less_column_sales_data_2023-10-17.csv to sales_data_error/less_column_sales_data_2023-10-17.csv
+2024-03-30 01:39:20,103 - INFO - Data Moved successfully from sales_data/ to sales_data_error/
+2024-03-30 01:39:20,104 - INFO - Moved sales_data_2023-12-13.csv file from /home/hdoop/projects/project-1/spark_data/file_from_s3/sales_data_2023-12-13.csv path to /home/hdoop/projects/project-1/spark_data/error_files/sales_data_2023-12-13.csv.
+2024-03-30 01:39:20,315 - INFO - Moved file: sales_data/sales_data_2023-12-13.csv to sales_data_error/sales_data_2023-12-13.csv
+2024-03-30 01:39:20,315 - INFO - Data Moved successfully from sales_data/ to sales_data_error/
+2024-03-30 01:39:20,316 - INFO - Moved sales_data_2023-12-17.csv file from /home/hdoop/projects/project-1/spark_data/file_from_s3/sales_data_2023-12-17.csv path to /home/hdoop/projects/project-1/spark_data/error_files/sales_data_2023-12-17.csv.
+2024-03-30 01:39:20,590 - INFO - Moved file: sales_data/sales_data_2023-12-17.csv to sales_data_error/sales_data_2023-12-17.csv
+2024-03-30 01:39:20,591 - INFO - Data Moved successfully from sales_data/ to sales_data_error/
+2024-03-30 01:39:20,591 - INFO - ******************************* Updating the product_staging_table to indicate process is started ************************************
+2024-03-30 01:39:20,591 - INFO - Insert statement created for staging table ---- ["\n            INSERT INTO manish_spark_de.product_staging_table \n            (file_name, file_location, created_date, status) \n            VALUES('sales_data_2024-01-03.csv', '/home/hdoop/projects/project-1/spark_data/file_from_s3/sales_data_2024-01-03.csv', '2024-03-30 01.39.20', 'A')\n            ", "\n            INSERT INTO manish_spark_de.product_staging_table \n            (file_name, file_location, created_date, status) \n            VALUES('sales_data.csv', '/home/hdoop/projects/project-1/spark_data/file_from_s3/sales_data.csv', '2024-03-30 01.39.20', 'A')\n            ", "\n            INSERT INTO manish_spark_de.product_staging_table \n            (file_name, file_location, created_date, status) \n            VALUES('extra_column_sales_data_2023_11_01.csv', '/home/hdoop/projects/project-1/spark_data/file_from_s3/extra_column_sales_data_2023_11_01.csv', '2024-03-30 01.39.20', 'A')\n            "]
+2024-03-30 01:39:20,592 - INFO - *************************** Connecting to MySql server ***************************
+2024-03-30 01:39:20,637 - INFO - *************************** MySql connected Successfully ***************************
+2024-03-30 01:39:20,656 - INFO - ********************************** Staging table updated successfully ***************************************
+2024-03-30 01:39:20,656 - INFO - **************************** Fixing extra columns coming from source *****************************
+2024-03-30 01:39:20,731 - INFO - data: /home/hdoop/projects/project-1/spark_data/file_from_s3/sales_data_2024-01-03.csv
+2024-03-30 01:39:21,328 - INFO - Extra columns present at source. Extra columns: []
+2024-03-30 01:39:21,416 - INFO - data: /home/hdoop/projects/project-1/spark_data/file_from_s3/sales_data.csv
+2024-03-30 01:39:21,709 - INFO - Extra columns present at source. Extra columns: []
+2024-03-30 01:39:21,757 - INFO - data: /home/hdoop/projects/project-1/spark_data/file_from_s3/extra_column_sales_data_2023_11_01.csv
+2024-03-30 01:39:22,049 - INFO - Extra columns present at source. Extra columns: ['payment_mode']
+2024-03-30 01:39:22,101 - INFO - processed /home/hdoop/projects/project-1/spark_data/file_from_s3/extra_column_sales_data_2023_11_01.csv and added additional columns
+2024-03-30 01:39:22,109 - INFO - ****************** Final dataframe from source which will be going for processing *****************
+2024-03-30 01:39:23,916 - INFO - **************** Loading customer table into customer_table_df *********************
+2024-03-30 01:39:24,390 - INFO - **************** Loading product table into product_table_df *********************
+2024-03-30 01:39:24,438 - INFO - **************** Loading product staging table into product_staging_table_df *********************
+2024-03-30 01:39:24,478 - INFO - **************** Loading sales team table into sales_team_table_df *********************
+2024-03-30 01:39:24,524 - INFO - **************** Loading store table into store_table_df *********************
+2024-03-30 01:39:24,565 - INFO - Joining the final_df_to_process with customer_table_df 
+2024-03-30 01:39:24,644 - INFO - Joining the s3_customer_df_join with store_table_df 
+2024-03-30 01:39:24,681 - INFO - Joining the s3_customer_store_df_join with sales_team_table_df 
+2024-03-30 01:39:24,796 - INFO - *********************** Final enriched data *****************************
+2024-03-30 01:39:27,334 - INFO - ********************** Write the data into customer data mart ******************************
+2024-03-30 01:39:27,379 - INFO - ************** Final Data for Customer Data Mart ********************
+2024-03-30 01:39:30,704 - INFO - *************** customer data written to local disk at /home/hdoop/projects/project-1/spark_data/customer_data_mart/ **********
+2024-03-30 01:39:30,704 - INFO - ************ Data Movement from local to S3 for customer data mart **************
+2024-03-30 01:39:31,156 - INFO - Data Successfully uploaded in customer_data_mart data mart 
+2024-03-30 01:39:31,156 - INFO - **************** Write the data into sales team data mart *******************
+2024-03-30 01:39:31,318 - INFO - ********************** Final Data for Sales Team Data Mart ************************
+2024-03-30 01:39:33,569 - INFO - ********** sales team data written to local disk at /home/hdoop/projects/project-1/spark_data/sales_team_data_mart/ **********
+2024-03-30 01:39:34,025 - INFO - Data Successfully uploaded in sales_data_mart data mart 
+2024-03-30 01:39:41,641 - INFO - ******************* Calculating customer every month purchased amount **********************
+2024-03-30 01:39:44,862 - INFO - Data successfully written into customers_data_mart table 
+2024-03-30 01:39:44,862 - INFO - ******************* Calculation of customer mart done and written into the tables **********************
+2024-03-30 01:39:44,862 - INFO - Calculating sales monthly billed amount
+2024-03-30 01:39:46,567 - INFO - Data successfully written into sales_team_data_mart table 
+2024-03-30 01:39:46,568 - INFO - Calculation of sales mart done and written into the table: sales_team_data_mart
+2024-03-30 01:39:47,145 - INFO - Data Moved successfully from sales_data/ to sales_data_processed/
+2024-03-30 01:39:47,146 - INFO - ******************* Deleting sales data from /home/hdoop/projects/project-1/spark_data/file_from_s3/ *******************
+2024-03-30 01:39:47,147 - INFO - ******************* Deleted sales data from /home/hdoop/projects/project-1/spark_data/file_from_s3/ *******************
+2024-03-30 01:39:47,147 - INFO - ******************* Deleting customer data mart files from locals *******************
+2024-03-30 01:39:47,148 - INFO - ******************* Deleting customer data mart files from locals *******************
+2024-03-30 01:39:47,148 - INFO - ******************* Deleting sales team data mart files from locals *******************
+2024-03-30 01:39:47,148 - INFO - ******************* Deleting sales team data mart files from locals *******************
+2024-03-30 01:39:47,148 - INFO - ******************* Deleting sales team data mart partitioned files from locals *******************
+2024-03-30 01:39:47,158 - INFO - ******************* Deleting sales team data mart partitioned files from locals *******************
+2024-03-30 01:39:47,158 - INFO - Update statement created for staging table: ["UPDATE manish_spark_de.product_staging_table SET status = 'I', updated_date = '2024-03-30 01.39.20' WHERE file_name = 'sales_data_2024-01-03.csv'", "UPDATE manish_spark_de.product_staging_table SET status = 'I', updated_date = '2024-03-30 01.39.20' WHERE file_name = 'sales_data.csv'", "UPDATE manish_spark_de.product_staging_table SET status = 'I', updated_date = '2024-03-30 01.39.20' WHERE file_name = 'extra_column_sales_data_2023_11_01.csv'"]
+2024-03-30 01:39:47,158 - INFO - **************** Connecting to MySQL server *******************
+2024-03-30 01:39:47,188 - INFO - *********** MySQL connected successfully **************
+2024-03-30 01:42:07,711 - INFO - List of Buckets: [{'Name': 'manish-de-spark-project-1', 'CreationDate': datetime.datetime(2024, 3, 15, 15, 34, 33, tzinfo=tzutc())}]
+2024-03-30 01:42:07,747 - INFO - Last run was successful!!!
+2024-03-30 01:42:08,894 - INFO - Total files available in folder 'sales_data/' of bucket 'manish-de-spark-project-1': {'ResponseMetadata': {'RequestId': '9C655HR1FBQ9AP66', 'HostId': 'PMoyeidcM/fJBfMjWZJtPJLrMNV6qrZwn+W9d+glaHYV28eF8H4BRtXN8tdj2Ct6qIwGb184IgDerj5GFUqwaA==', 'HTTPStatusCode': 200, 'HTTPHeaders': {'x-amz-id-2': 'PMoyeidcM/fJBfMjWZJtPJLrMNV6qrZwn+W9d+glaHYV28eF8H4BRtXN8tdj2Ct6qIwGb184IgDerj5GFUqwaA==', 'x-amz-request-id': '9C655HR1FBQ9AP66', 'date': 'Sat, 30 Mar 2024 05:42:09 GMT', 'x-amz-bucket-region': 'us-east-2', 'content-type': 'application/xml', 'transfer-encoding': 'chunked', 'server': 'AmazonS3'}, 'RetryAttempts': 1}, 'IsTruncated': False, 'Contents': [{'Key': 'sales_data/extra_column_sales_data_2023_11_01.csv', 'LastModified': datetime.datetime(2024, 3, 30, 5, 41, 29, tzinfo=tzutc()), 'ETag': '"0cc6d8a83a66cbfb151e98af0f80af9e"', 'Size': 44125, 'StorageClass': 'STANDARD'}, {'Key': 'sales_data/less_column_sales_data_2023-10-17.csv', 'LastModified': datetime.datetime(2024, 3, 30, 5, 41, 29, tzinfo=tzutc()), 'ETag': '"bda03cec01d8062894990369c9ebad34"', 'Size': 10029, 'StorageClass': 'STANDARD'}, {'Key': 'sales_data/sales_data.csv', 'LastModified': datetime.datetime(2024, 3, 30, 5, 41, 29, tzinfo=tzutc()), 'ETag': '"5cfb2bff8f0082fca1ae8b0fce80dcef"', 'Size': 19717, 'StorageClass': 'STANDARD'}, {'Key': 'sales_data/sales_data_2023-12-13.csv', 'LastModified': datetime.datetime(2024, 3, 30, 5, 41, 30, tzinfo=tzutc()), 'ETag': '"99cc94d38e155721ebc5e973b75b9172"', 'Size': 9988, 'StorageClass': 'STANDARD'}, {'Key': 'sales_data/sales_data_2023-12-15.csv', 'LastModified': datetime.datetime(2024, 3, 30, 5, 41, 29, tzinfo=tzutc()), 'ETag': '"99cc94d38e155721ebc5e973b75b9172"', 'Size': 9988, 'StorageClass': 'STANDARD'}, {'Key': 'sales_data/sales_data_2023-12-17.csv', 'LastModified': datetime.datetime(2024, 3, 30, 5, 41, 30, tzinfo=tzutc()), 'ETag': '"bda03cec01d8062894990369c9ebad34"', 'Size': 10029, 'StorageClass': 'STANDARD'}, {'Key': 'sales_data/sales_data_2024-01-03.csv', 'LastModified': datetime.datetime(2024, 3, 30, 5, 41, 29, tzinfo=tzutc()), 'ETag': '"5cfb2bff8f0082fca1ae8b0fce80dcef"', 'Size': 19717, 'StorageClass': 'STANDARD'}], 'Name': 'manish-de-spark-project-1', 'Prefix': 'sales_data/', 'MaxKeys': 1000, 'EncodingType': 'url', 'KeyCount': 7}
+2024-03-30 01:42:08,894 - INFO - Absolute path on s3 bucket for csv file ['s3://manish-de-spark-project-1/sales_data/extra_column_sales_data_2023_11_01.csv', 's3://manish-de-spark-project-1/sales_data/less_column_sales_data_2023-10-17.csv', 's3://manish-de-spark-project-1/sales_data/sales_data.csv', 's3://manish-de-spark-project-1/sales_data/sales_data_2023-12-13.csv', 's3://manish-de-spark-project-1/sales_data/sales_data_2023-12-15.csv', 's3://manish-de-spark-project-1/sales_data/sales_data_2023-12-17.csv', 's3://manish-de-spark-project-1/sales_data/sales_data_2024-01-03.csv'] 
+2024-03-30 01:42:08,894 - INFO - File path available on S3 under manish-de-spark-project-1 bucket and file path is ['sales_data/extra_column_sales_data_2023_11_01.csv', 'sales_data/less_column_sales_data_2023-10-17.csv', 'sales_data/sales_data.csv', 'sales_data/sales_data_2023-12-13.csv', 'sales_data/sales_data_2023-12-15.csv', 'sales_data/sales_data_2023-12-17.csv', 'sales_data/sales_data_2024-01-03.csv']
+2024-03-30 01:42:08,894 - INFO - Running download files for these files ['sales_data/extra_column_sales_data_2023_11_01.csv', 'sales_data/less_column_sales_data_2023-10-17.csv', 'sales_data/sales_data.csv', 'sales_data/sales_data_2023-12-13.csv', 'sales_data/sales_data_2023-12-15.csv', 'sales_data/sales_data_2023-12-17.csv', 'sales_data/sales_data_2024-01-03.csv']
+2024-03-30 01:42:08,895 - INFO - File name extra_column_sales_data_2023_11_01.csv 
+2024-03-30 01:42:09,099 - INFO - File name less_column_sales_data_2023-10-17.csv 
+2024-03-30 01:42:09,245 - INFO - File name sales_data.csv 
+2024-03-30 01:42:09,390 - INFO - File name sales_data_2023-12-13.csv 
+2024-03-30 01:42:09,537 - INFO - File name sales_data_2023-12-15.csv 
+2024-03-30 01:42:09,698 - INFO - File name sales_data_2023-12-17.csv 
+2024-03-30 01:42:09,839 - INFO - File name sales_data_2024-01-03.csv 
+2024-03-30 01:42:09,979 - INFO - list of files present in the local directory after download: ['sales_data_2024-01-03.csv', 'sales_data.csv', 'sales_data_2023-12-15.csv', 'less_column_sales_data_2023-10-17.csv', 'extra_column_sales_data_2023_11_01.csv', 'sales_data_2023-12-13.csv', 'sales_data_2023-12-17.csv']
+2024-03-30 01:42:09,980 - INFO - **********************Listing the files***********************
+2024-03-30 01:42:09,980 - INFO - listing the csv files that needs to be processed: ['/home/hdoop/projects/project-1/spark_data/file_from_s3/sales_data_2024-01-03.csv', '/home/hdoop/projects/project-1/spark_data/file_from_s3/sales_data.csv', '/home/hdoop/projects/project-1/spark_data/file_from_s3/sales_data_2023-12-15.csv', '/home/hdoop/projects/project-1/spark_data/file_from_s3/less_column_sales_data_2023-10-17.csv', '/home/hdoop/projects/project-1/spark_data/file_from_s3/extra_column_sales_data_2023_11_01.csv', '/home/hdoop/projects/project-1/spark_data/file_from_s3/sales_data_2023-12-13.csv', '/home/hdoop/projects/project-1/spark_data/file_from_s3/sales_data_2023-12-17.csv']
+2024-03-30 01:42:09,980 - INFO - ******************* Creating Spark Session *******************
+2024-03-30 01:42:11,858 - INFO - spark session <pyspark.sql.session.SparkSession object at 0x7db597582a40>
+2024-03-30 01:42:11,858 - INFO - ******************* Spark Session Created *******************
+2024-03-30 01:42:11,858 - INFO - Checking schema of data loaded in s3
+2024-03-30 01:42:17,601 - INFO - Schema/Columns in /home/hdoop/projects/project-1/spark_data/file_from_s3/sales_data_2024-01-03.csv are ['customer_id', 'store_id', 'product_name', 'sales_date', 'sales_person_id', 'price', 'quantity', 'total_cost']
+2024-03-30 01:42:17,601 - INFO - Mandatory columns in schema is: ['customer_id', 'store_id', 'product_name', 'sales_date', 'sales_person_id', 'price', 'quantity', 'total_cost']
+2024-03-30 01:42:17,601 - INFO - Missing column(s) is/are: set()
+2024-03-30 01:42:17,602 - INFO - No missing column for the /home/hdoop/projects/project-1/spark_data/file_from_s3/sales_data_2024-01-03.csv
+2024-03-30 01:42:17,910 - INFO - Schema/Columns in /home/hdoop/projects/project-1/spark_data/file_from_s3/sales_data.csv are ['customer_id', 'store_id', 'product_name', 'sales_date', 'sales_person_id', 'price', 'quantity', 'total_cost']
+2024-03-30 01:42:17,910 - INFO - Mandatory columns in schema is: ['customer_id', 'store_id', 'product_name', 'sales_date', 'sales_person_id', 'price', 'quantity', 'total_cost']
+2024-03-30 01:42:17,910 - INFO - Missing column(s) is/are: set()
+2024-03-30 01:42:17,910 - INFO - No missing column for the /home/hdoop/projects/project-1/spark_data/file_from_s3/sales_data.csv
+2024-03-30 01:42:18,231 - INFO - Schema/Columns in /home/hdoop/projects/project-1/spark_data/file_from_s3/sales_data_2023-12-15.csv are ['customer_id', 'product_name', 'sales_date', 'sales_person_id', 'price', 'quantity', 'total_cost', 'payment_mode']
+2024-03-30 01:42:18,231 - INFO - Mandatory columns in schema is: ['customer_id', 'store_id', 'product_name', 'sales_date', 'sales_person_id', 'price', 'quantity', 'total_cost']
+2024-03-30 01:42:18,231 - INFO - Missing column(s) is/are: {'store_id'}
+2024-03-30 01:42:18,540 - INFO - Schema/Columns in /home/hdoop/projects/project-1/spark_data/file_from_s3/less_column_sales_data_2023-10-17.csv are ['customer_id', 'product_name', 'sales_date', 'sales_person_id', 'price', 'quantity', 'total_cost', 'payment_mode']
+2024-03-30 01:42:18,541 - INFO - Mandatory columns in schema is: ['customer_id', 'store_id', 'product_name', 'sales_date', 'sales_person_id', 'price', 'quantity', 'total_cost']
+2024-03-30 01:42:18,541 - INFO - Missing column(s) is/are: {'store_id'}
+2024-03-30 01:42:18,785 - INFO - Schema/Columns in /home/hdoop/projects/project-1/spark_data/file_from_s3/extra_column_sales_data_2023_11_01.csv are ['customer_id', 'store_id', 'product_name', 'sales_date', 'sales_person_id', 'price', 'quantity', 'total_cost', 'payment_mode']
+2024-03-30 01:42:18,785 - INFO - Mandatory columns in schema is: ['customer_id', 'store_id', 'product_name', 'sales_date', 'sales_person_id', 'price', 'quantity', 'total_cost']
+2024-03-30 01:42:18,785 - INFO - Missing column(s) is/are: set()
+2024-03-30 01:42:18,785 - INFO - No missing column for the /home/hdoop/projects/project-1/spark_data/file_from_s3/extra_column_sales_data_2023_11_01.csv
+2024-03-30 01:42:19,032 - INFO - Schema/Columns in /home/hdoop/projects/project-1/spark_data/file_from_s3/sales_data_2023-12-13.csv are ['customer_id', 'product_name', 'sales_date', 'sales_person_id', 'price', 'quantity', 'total_cost', 'payment_mode']
+2024-03-30 01:42:19,032 - INFO - Mandatory columns in schema is: ['customer_id', 'store_id', 'product_name', 'sales_date', 'sales_person_id', 'price', 'quantity', 'total_cost']
+2024-03-30 01:42:19,032 - INFO - Missing column(s) is/are: {'store_id'}
+2024-03-30 01:42:19,342 - INFO - Schema/Columns in /home/hdoop/projects/project-1/spark_data/file_from_s3/sales_data_2023-12-17.csv are ['customer_id', 'product_name', 'sales_date', 'sales_person_id', 'price', 'quantity', 'total_cost', 'payment_mode']
+2024-03-30 01:42:19,342 - INFO - Mandatory columns in schema is: ['customer_id', 'store_id', 'product_name', 'sales_date', 'sales_person_id', 'price', 'quantity', 'total_cost']
+2024-03-30 01:42:19,342 - INFO - Missing column(s) is/are: {'store_id'}
+2024-03-30 01:42:19,343 - INFO - ******************** List of correct files******************** ['/home/hdoop/projects/project-1/spark_data/file_from_s3/sales_data_2024-01-03.csv', '/home/hdoop/projects/project-1/spark_data/file_from_s3/sales_data.csv', '/home/hdoop/projects/project-1/spark_data/file_from_s3/extra_column_sales_data_2023_11_01.csv']
+2024-03-30 01:42:19,343 - INFO - ******************** List of error files******************** ['/home/hdoop/projects/project-1/spark_data/file_from_s3/sales_data_2023-12-15.csv', '/home/hdoop/projects/project-1/spark_data/file_from_s3/less_column_sales_data_2023-10-17.csv', '/home/hdoop/projects/project-1/spark_data/file_from_s3/sales_data_2023-12-13.csv', '/home/hdoop/projects/project-1/spark_data/file_from_s3/sales_data_2023-12-17.csv']
+2024-03-30 01:42:19,343 - INFO - ******************** Moving the error files to error directory if any********************
+2024-03-30 01:42:19,343 - INFO - Moved sales_data_2023-12-15.csv file from /home/hdoop/projects/project-1/spark_data/file_from_s3/sales_data_2023-12-15.csv path to /home/hdoop/projects/project-1/spark_data/error_files/sales_data_2023-12-15.csv.
+2024-03-30 01:42:19,556 - INFO - Moved file: sales_data/sales_data_2023-12-15.csv to sales_data_error/sales_data_2023-12-15.csv
+2024-03-30 01:42:19,556 - INFO - Data Moved successfully from sales_data/ to sales_data_error/
+2024-03-30 01:42:19,556 - INFO - Moved less_column_sales_data_2023-10-17.csv file from /home/hdoop/projects/project-1/spark_data/file_from_s3/less_column_sales_data_2023-10-17.csv path to /home/hdoop/projects/project-1/spark_data/error_files/less_column_sales_data_2023-10-17.csv.
+2024-03-30 01:42:19,830 - INFO - Moved file: sales_data/less_column_sales_data_2023-10-17.csv to sales_data_error/less_column_sales_data_2023-10-17.csv
+2024-03-30 01:42:19,830 - INFO - Data Moved successfully from sales_data/ to sales_data_error/
+2024-03-30 01:42:19,831 - INFO - Moved sales_data_2023-12-13.csv file from /home/hdoop/projects/project-1/spark_data/file_from_s3/sales_data_2023-12-13.csv path to /home/hdoop/projects/project-1/spark_data/error_files/sales_data_2023-12-13.csv.
+2024-03-30 01:42:20,053 - INFO - Moved file: sales_data/sales_data_2023-12-13.csv to sales_data_error/sales_data_2023-12-13.csv
+2024-03-30 01:42:20,054 - INFO - Data Moved successfully from sales_data/ to sales_data_error/
+2024-03-30 01:42:20,054 - INFO - Moved sales_data_2023-12-17.csv file from /home/hdoop/projects/project-1/spark_data/file_from_s3/sales_data_2023-12-17.csv path to /home/hdoop/projects/project-1/spark_data/error_files/sales_data_2023-12-17.csv.
+2024-03-30 01:42:20,260 - INFO - Moved file: sales_data/sales_data_2023-12-17.csv to sales_data_error/sales_data_2023-12-17.csv
+2024-03-30 01:42:20,261 - INFO - Data Moved successfully from sales_data/ to sales_data_error/
+2024-03-30 01:42:20,261 - INFO - ******************************* Updating the product_staging_table to indicate process is started ************************************
+2024-03-30 01:42:20,261 - INFO - Insert statement created for staging table ---- ["\n            INSERT INTO manish_spark_de.product_staging_table \n            (file_name, file_location, created_date, status) \n            VALUES('sales_data_2024-01-03.csv', '/home/hdoop/projects/project-1/spark_data/file_from_s3/sales_data_2024-01-03.csv', '2024-03-30 01.42.20', 'A')\n            ", "\n            INSERT INTO manish_spark_de.product_staging_table \n            (file_name, file_location, created_date, status) \n            VALUES('sales_data.csv', '/home/hdoop/projects/project-1/spark_data/file_from_s3/sales_data.csv', '2024-03-30 01.42.20', 'A')\n            ", "\n            INSERT INTO manish_spark_de.product_staging_table \n            (file_name, file_location, created_date, status) \n            VALUES('extra_column_sales_data_2023_11_01.csv', '/home/hdoop/projects/project-1/spark_data/file_from_s3/extra_column_sales_data_2023_11_01.csv', '2024-03-30 01.42.20', 'A')\n            "]
+2024-03-30 01:42:20,262 - INFO - *************************** Connecting to MySql server ***************************
+2024-03-30 01:42:20,302 - INFO - *************************** MySql connected Successfully ***************************
+2024-03-30 01:42:20,327 - INFO - ********************************** Staging table updated successfully ***************************************
+2024-03-30 01:42:20,328 - INFO - **************************** Fixing extra columns coming from source *****************************
+2024-03-30 01:42:20,402 - INFO - data: /home/hdoop/projects/project-1/spark_data/file_from_s3/sales_data_2024-01-03.csv
+2024-03-30 01:42:20,912 - INFO - Extra columns present at source. Extra columns: []
+2024-03-30 01:42:21,013 - INFO - data: /home/hdoop/projects/project-1/spark_data/file_from_s3/sales_data.csv
+2024-03-30 01:42:21,405 - INFO - Extra columns present at source. Extra columns: []
+2024-03-30 01:42:21,489 - INFO - data: /home/hdoop/projects/project-1/spark_data/file_from_s3/extra_column_sales_data_2023_11_01.csv
+2024-03-30 01:42:21,824 - INFO - Extra columns present at source. Extra columns: ['payment_mode']
+2024-03-30 01:42:21,885 - INFO - processed /home/hdoop/projects/project-1/spark_data/file_from_s3/extra_column_sales_data_2023_11_01.csv and added additional columns
+2024-03-30 01:42:21,895 - INFO - ****************** Final dataframe from source which will be going for processing *****************
+2024-03-30 01:42:23,675 - INFO - **************** Loading customer table into customer_table_df *********************
+2024-03-30 01:42:24,284 - INFO - **************** Loading product table into product_table_df *********************
+2024-03-30 01:42:24,327 - INFO - **************** Loading product staging table into product_staging_table_df *********************
+2024-03-30 01:42:24,371 - INFO - **************** Loading sales team table into sales_team_table_df *********************
+2024-03-30 01:42:24,424 - INFO - **************** Loading store table into store_table_df *********************
+2024-03-30 01:42:24,465 - INFO - Joining the final_df_to_process with customer_table_df 
+2024-03-30 01:42:24,527 - INFO - Joining the s3_customer_df_join with store_table_df 
+2024-03-30 01:42:24,562 - INFO - Joining the s3_customer_store_df_join with sales_team_table_df 
+2024-03-30 01:42:24,678 - INFO - *********************** Final enriched data *****************************
+2024-03-30 01:42:27,591 - INFO - ********************** Write the data into customer data mart ******************************
+2024-03-30 01:42:27,668 - INFO - ************** Final Data for Customer Data Mart ********************
+2024-03-30 01:42:33,871 - INFO - *************** customer data written to local disk at /home/hdoop/projects/project-1/spark_data/customer_data_mart/ **********
+2024-03-30 01:42:33,871 - INFO - ************ Data Movement from local to S3 for customer data mart **************
+2024-03-30 01:42:34,337 - INFO - Data Successfully uploaded in customer_data_mart data mart 
+2024-03-30 01:42:34,337 - INFO - **************** Write the data into sales team data mart *******************
+2024-03-30 01:42:34,584 - INFO - ********************** Final Data for Sales Team Data Mart ************************
+2024-03-30 01:42:37,518 - INFO - ********** sales team data written to local disk at /home/hdoop/projects/project-1/spark_data/sales_team_data_mart/ **********
+2024-03-30 01:42:38,037 - INFO - Data Successfully uploaded in sales_data_mart data mart 
+2024-03-30 01:42:46,132 - INFO - ******************* Calculating customer every month purchased amount **********************
+2024-03-30 01:42:50,058 - INFO - Data successfully written into customers_data_mart table 
+2024-03-30 01:42:50,058 - INFO - ******************* Calculation of customer mart done and written into the tables **********************
+2024-03-30 01:42:50,059 - INFO - Calculating sales monthly billed amount
+2024-03-30 01:42:52,002 - INFO - Data successfully written into sales_team_data_mart table 
+2024-03-30 01:42:52,002 - INFO - Calculation of sales mart done and written into the table: sales_team_data_mart
+2024-03-30 01:42:52,542 - INFO - Data Moved successfully from sales_data/ to sales_data_processed/
+2024-03-30 01:42:52,543 - INFO - ******************* Deleting sales data from /home/hdoop/projects/project-1/spark_data/file_from_s3/ *******************
+2024-03-30 01:42:52,544 - INFO - ******************* Deleted sales data from /home/hdoop/projects/project-1/spark_data/file_from_s3/ *******************
+2024-03-30 01:42:52,544 - INFO - ******************* Deleting customer data mart files from locals *******************
+2024-03-30 01:42:52,546 - INFO - ******************* Deleting customer data mart files from locals *******************
+2024-03-30 01:42:52,546 - INFO - ******************* Deleting sales team data mart files from locals *******************
+2024-03-30 01:42:52,547 - INFO - ******************* Deleting sales team data mart files from locals *******************
+2024-03-30 01:42:52,547 - INFO - ******************* Deleting sales team data mart partitioned files from locals *******************
+2024-03-30 01:42:52,559 - INFO - ******************* Deleting sales team data mart partitioned files from locals *******************
+2024-03-30 01:42:52,559 - INFO - Update statement created for staging table: ["UPDATE manish_spark_de.product_staging_table SET status = 'I', updated_date = '2024-03-30 01.42.20' WHERE file_name = 'sales_data_2024-01-03.csv'", "UPDATE manish_spark_de.product_staging_table SET status = 'I', updated_date = '2024-03-30 01.42.20' WHERE file_name = 'sales_data.csv'", "UPDATE manish_spark_de.product_staging_table SET status = 'I', updated_date = '2024-03-30 01.42.20' WHERE file_name = 'extra_column_sales_data_2023_11_01.csv'"]
+2024-03-30 01:42:52,560 - INFO - **************** Connecting to MySQL server *******************
+2024-03-30 01:42:52,594 - INFO - *********** MySQL connected successfully **************

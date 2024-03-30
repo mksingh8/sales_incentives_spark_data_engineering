@@ -20,10 +20,10 @@ salt = os.getenv("salt")
 iv_bytes = iv.encode('utf-8')
 
 # AWS Access And Secret key
-# aws_access_key = "urHvnd0/MTwHgpNCkE7QXc3MA/4kP3njYqpM1Bq+E0M="
-# aws_secret_key = "DbCCHBJll+Pi5R5+bmgfAm1bvxDkv3Y+giCxIAAmyTenNmltd/zQgjpGG/LMUR/h"
 aws_access_key = "5CAGGzQitq6CncKx7/1YdX2gLFltjGyyVGyAbpI8Lhg="
 aws_secret_key = "yA9NqqA6SRAzvkN1KVNNBtQi0CkZQzzaSZuPmWd4BWcF5m2SwRXR1o7DbNp7IevU"
+
+# AWS S3 Bucket and directory details
 bucket_name = "manish-de-spark-project-1"
 s3_customer_datamart_directory = "customer_data_mart"
 s3_sales_datamart_directory = "sales_data_mart"
@@ -42,14 +42,21 @@ properties = {
     "driver": "com.mysql.cj.jdbc.Driver"
 }
 
-# Table name
+# Mysql connections details
+host = os.getenv("mysqlhost")
+user = os.getenv("mysqluser")
+password = "Mg/OFfuodzkkNUhKmWU7Qg=="
+database = f"{database_name}"
+
+
+# MySql Table name
 customer_table_name = "customer"
 product_staging_table = "product_staging_table"
 product_table = "product"
 sales_team_table = "sales_team"
 store_table = "store"
 
-# Data Mart details
+# MYSQL Data Mart details
 customer_data_mart_table = "customers_data_mart"
 sales_team_data_mart_table = "sales_team_data_mart"
 
@@ -57,18 +64,9 @@ sales_team_data_mart_table = "sales_team_data_mart"
 mandatory_columns = ["customer_id", "store_id", "product_name", "sales_date", "sales_person_id", "price", "quantity",
                      "total_cost"]
 
-# File Download location
+# Local File location
 local_directory = "/home/hdoop/projects/project-1/spark_data/file_from_s3/"
 customer_data_mart_local_file = "/home/hdoop/projects/project-1/spark_data/customer_data_mart/"
 sales_team_data_mart_local_file = "/home/hdoop/projects/project-1/spark_data/sales_team_data_mart/"
 sales_team_data_mart_partitioned_local_file = "/home/hdoop/projects/project-1/spark_data/sales_partition_data/"
 error_folder_path_local = "/home/hdoop/projects/project-1/spark_data/error_files/"
-
-# Mysql connections details
-host = "localhost"
-user = "root"
-password = "Mg/OFfuodzkkNUhKmWU7Qg=="
-database = "manish_spark_de"
-
-# MySQl table details
-product_staging_table = "product_staging_table"

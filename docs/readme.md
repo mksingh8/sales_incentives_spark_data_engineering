@@ -1,4 +1,4 @@
-The main.py (heart of the application) is created from the scratch, a lot of modifications are done in order to tighten the loose ends within the project.
+The main.py (heart of the application) is created from scratch, a lot of modifications are done in order to tighten the loose ends within the project.
 I have used Ubuntu os and pyCharm ide to write the code for this spark app. 
 
 The base code is taken from Manish's repo.
@@ -8,18 +8,21 @@ The code has been meticulously crafted with careful consideration for various as
 
 ```plaintext
 Project structure:-
-My_Project
+my_project
 ├── docs
-│   ├── architecture
 │   ├── architecture.png
 │   ├── database_schema.drawio.png
 │   ├── project_structure.txt
 │   └── readme.md
 ├── .env
 ├── .gitignore
+├── __init__.py
+├── logs
+│   └── application.log
 ├── resources
 │   ├── dev
 │   │   ├── config.py
+│   │   ├── __init__.py
 │   │   └── requirements.txt
 │   ├── __init__.py
 │   ├── prod
@@ -46,9 +49,11 @@ My_Project
     │   │   ├── aws_read.py
     │   │   └── database_read.py
     │   ├── transformations
+    │   │   ├── __init__.py
     │   │   └── jobs
     │   │       ├── customer_mart_sql_tranform_write.py
     │   │       ├── dimension_tables_join.py
+    │   │       ├── __init__.py
     │   │       ├── main.py
     │   │       └── sales_mart_sql_transform_write.py
     │   ├── upload
@@ -73,6 +78,8 @@ My_Project
         ├── less_column_csv_generated_data.py
         ├── sales_data_upload_s3.py
         └── scratch_pad.py
+
+20 directories, 49 files
 
 19 directories, 45 files
 ```
