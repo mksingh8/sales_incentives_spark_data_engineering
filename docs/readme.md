@@ -99,3 +99,5 @@ How to run the program in Pycharm:-
 6. You will have to create a user on AWS also and assign s3 full access and provide secret key and access key to the config file.
 7. Run main.py from green play button on top right hand side or in terminal run spark-submit master local[*] main.py
 8. If everything works as expected enjoy, else re-try and watch https://youtu.be/FWiwI5DheO0?si=kYDKzlEhACkXOvmo
+9. If you want to run the main.py using spark submit command, you need let spark know to run it from venv python interpreter and also provide all the necessary jar files. Below is the code, I am using to submit the spark command.
+spark-submit --master local[4] --conf spark.pyspark.python=/home/hdoop/PycharmProjects/de_project1/venv/bin/python --jars /usr/share/java/mysql-connector-java-8.3.0.jar src/main/transformations/jobs/main.py
