@@ -1,4 +1,4 @@
-my_project
+.
 ├── docs
 │   ├── architecture.png
 │   ├── database_schema.drawio.png
