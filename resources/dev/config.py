@@ -20,8 +20,8 @@ salt = os.getenv("salt")
 # iv_bytes = iv.encode('utf-8')
 
 # AWS Access And Secret key
-aws_access_key = "5CAGGzQitq6CncKx7/1YdX2gLFltjGyyVGyAbpI8Lhg="
-aws_secret_key = "yA9NqqA6SRAzvkN1KVNNBtQi0CkZQzzaSZuPmWd4BWcF5m2SwRXR1o7DbNp7IevU"
+aws_access_key = "5CAGGzQitq6CncKx7/1YdX2gLFltjGyyVGyAbpI8Lh"
+aws_secret_key = "yA9NqqA6SRAzvkN1KVNNBtQi0CkZQzzaSZuPmWd4BWcF5m2SwRXR1o7DbNp7Ie"
 
 # AWS S3 Bucket and directory details
 bucket_name = "manish-de-spark-project-1"
